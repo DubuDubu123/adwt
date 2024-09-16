@@ -1,0 +1,83 @@
+<!-- <div class="preloader js-preloader">
+  <div class="preloader__wrap">
+     <div class="preloader__icon">
+        <img src="https://sgh.dubudubutechnologies.com/public/assets/img/banner1.jpg" alt="logo icon" style="height: 61px; width: 65px;">
+     </div>
+  </div>
+  <div class="preloader__title">State Guest House</div>
+</div> -->
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 ">
+   
+      <form class="login100-form validate-form login-form login_form has-validation-callback" id="form" style="position:relative" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div style="display: none;" class="header-mobile">
+          <div style="position: relative; top: 8px; left: 10px;">
+            <img src="https://sgh.dubudubutechnologies.com/public/assets/img/banner1.jpg" alt="" style="width: 69px;">
+          </div>
+          <span class="back" style="position: absolute; top: 19px; right: 30px; padding: 7px 12px; background-color: #0A7E8C; color: white; border-radius: 3px; cursor: pointer;" >
+            <i class="fas fa-chevron-left"></i>
+          </span>
+        </div> 
+        <div class="image1" style="display: none;">
+          <img src="https://sgh.dubudubutechnologies.com/public/assets/img/banner1.jpg" style="width: 100%;height:400px">
+        </div>
+        <div class="image" style="width: 80%; height: 100px;text-align: center;">
+          <img src="https://sgh.dubudubutechnologies.com/public/assets/img/image.png" alt="" style="width: 100px;">
+        </div>
+        <div class="print-error-msg response-error" style="display: none;background-color: red;width: 425px;color: white;padding: 10px;border-radius: 3px;">
+          <ul></ul>
+        </div>
+        <div class="ligon-section" style="margin-top: 35px;">
+          <div class="login-section-mobile">
+            <div style="position:relative;display:inline-block">
+              <h3 style="font-family: fantasy;" class="heading login mobile"> LOGIN</h3>
+            </div>
+            <div class="login-field-mobile" style="padding: 30px 0px 10px 0px;"> 
+              <div class="wrap-input100">
+                <input class="input100" #emailInput type="text" formControlName="email" placeholder=" " autocomplete="off">
+                <label class="label-input100">Email Address</label>
+              </div>
+      
+              <div class="wrap-input100">
+                <input class="input100" type="password" formControlName="password" placeholder=" " autocomplete="off">
+                <label class="label-input100">Password</label>
+              </div>
+      
+              <div style="position: relative;width: 100%; font-weight: 600;" class="forgot_text">
+                <span class="gradient-border" style="background: linear-gradient(45deg, #249ced, #03ecf2); -webkit-background-clip: text;-webkit-text-fill-color: transparent;font-size: 12px;text-decoration: underline; position: absolute;right: 108px;top: -20px;cursor: pointer;" (click)="forgetPassword()" class="forget-password-mobile">Forgot Password</span>
+              </div>
+              <div style="width: 80%; text-align: center;margin-top:70px" class="login-button">
+                <div *ngIf="showError" class="error-message" style="
+                    padding: 10px;
+                    width: 100%;
+                    background: red;
+                    color: white;
+                    margin-bottom: 10px;
+                    border-radius: 3px;
+                    display: block;
+                    animation: fadeInOut 3s">{{ errorMessage }}</div>
+                     <div *ngIf="loading" class="loader" style="text-align: center;">
+                      <!-- You can use a CSS spinner here -->
+                      <div class="spinner-border" role="status">
+                          <span class="sr-only">Loading...</span>
+                      </div>
+                  </div>
+                  <div [ngStyle]="{'display': loading ? 'none' : 'block'}">
+                <button type="submit" style="padding: 10px 70px; background: linear-gradient(45deg, #249ced, #03ecf2); border-radius: 100px; cursor: pointer; color: #fff;" class="btn btn-info btn-block margin-top-10 submit_button text-white">
+                  Login
+                </button>
+              </div> 
+            </div> 
+            </div>
+          </div>
+        </div>
+      </form>
+      
+        
+                  <div class="login100-more" style="background-image: url('https://sgh.dubudubutechnologies.com/public/assets/img/banner1.jpg');">
+
+      </div>
+    </div>
+  </div>
+</div>
